@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+table{
+/*	border: 1px solid black;*/
+/*	border-collapse: collapse;*/
+	table-layout: fixed;
+	width: 100%;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	background: transparent;
+}
+table tr th{
+/*	border: 1px solid black;*/
+	font-size: 25px;
+	padding: 0;
+	color: firebrick;
+	letter-spacing: 1.2px;
+	text-shadow: 0.4px 0.4px 1px #000;
+	text-decoration: underline;
+	line-height: 0.8;
+}
+table tr td.month{
+/*	border: 1px solid black;*/
+	font-size: 20px;
+	padding: 0;
+}
+table tr td.date{
+/*	border: 1px solid black;*/
+
+}
+table, tr, th, td{
+	border: none;
+	outline: none;
+	border-collapse: collapse;
+	width: 100%;
+	font-weight: bold;
+}
+table tr td.days{
+	font-size: 18px;
+/*	font-weight: bold;*/
+	color: darkblue;
+	letter-spacing: 1.2px;
+	text-shadow: 0.2px 0.2px 0.8px #000;
+}
+table tr td.date:first-child{
+	color: #e30f00;
+}
+table tr td.no-date:hover{
+	background: none;
+	color: black;
+}
+table tr td.sunday{
+	color: #e30f00;
+}
+.holiday {
+/*	border: 1px solid red;*/
+	color: #e30f00;
+}
+.holiday a{
+	border: 1px solid #e30f00;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #e30f00;
+	padding: 10px 20px;
+	width: 20px;
+	height: 10px;
+}
+.holiday a:hover{
+	background: rgba(255, 0, 0, 0.2);
+}
+table tr td.imp-date a{
+	border: 1px solid blue;
+	border-radius: 10px;
+	color: darkblue;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+table tr td.imp-date a:hover{
+	background: rgba(0, 0, 255, 0.2);
+}
+@media only screen and (max-width: 700px){
+	table tr th{
+		font-size: 22px;
+	}
+	table tr td.days{
+		font-size: 16px;
+	}
+	table tr td.date{
+		font-size: 14px;
+	}
+}
