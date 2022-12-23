@@ -31,7 +31,7 @@ header{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+/*	gap: 10px;*/
 }
 header h1{
 /*	border: 1px solid #eee;*/
@@ -43,6 +43,7 @@ header h1{
 }
 header a{
 /*	border: 1px solid #fff;*/
+/*	flex: 1;*/
 	padding: 10px 20px;
 	color: #fff;
 	text-decoration: none;
@@ -258,6 +259,10 @@ header a:hover{
 	.wrapper header{
 /*		border: 1px solid red;*/
 	}
+	header a{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
 	.wrapper header h1{
 /*		border: 1px solid yellow;*/
 		font-size: 30px;
@@ -270,5 +275,14 @@ header a:hover{
 	.calendar-tools h2{
 		font-size: 20px;
 		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 300px){
+	.calendar-container{
+/*		scale: 98%;*/
+	}
+	.calendar-container .frame-container{
+/*		scale: 90%;*/
 	}
 }

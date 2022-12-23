@@ -18,12 +18,12 @@ table{
 }
 table tr th{
 /*	border: 1px solid black;*/
-	font-size: 25px;
+	font-size: 24px;
 	padding: 0;
 	color: firebrick;
 	letter-spacing: 1.2px;
 	text-shadow: 0.4px 0.4px 1px #000;
-	text-decoration: underline;
+/*	text-decoration: underline;*/
 	line-height: 0.8;
 }
 table tr td.month{
@@ -64,11 +64,11 @@ table tr td.sunday{
 	color: #e30f00;
 }
 .holiday a{
-	border: 1px solid #e30f00;
+/*	border: 1px solid #e30f00;*/
 	border-radius: 10px;
 	text-decoration: none;
 	color: #e30f00;
-	padding: 10px 20px;
+/*	padding: 10px 20px;*/
 	width: 20px;
 	height: 10px;
 }
@@ -76,10 +76,10 @@ table tr td.sunday{
 	background: rgba(255, 0, 0, 0.2);
 }
 table tr td.imp-date a{
-	border: 1px solid blue;
+/*	border: 1px solid blue;*/
 	border-radius: 10px;
 	color: darkblue;
-	padding: 10px 20px;
+/*	padding: 10px 20px;*/
 	text-decoration: none;
 }
 table tr td.imp-date a:hover{
