@@ -73,7 +73,7 @@ table tr td.sunday{
 	height: 10px;
 }
 .holiday a:hover{
-	background: rgba(255, 0, 0, 0.2);
+/*	background: rgba(255, 0, 0, 0.2);*/
 }
 table tr td.imp-date a{
 /*	border: 1px solid blue;*/
@@ -83,7 +83,7 @@ table tr td.imp-date a{
 	text-decoration: none;
 }
 table tr td.imp-date a:hover{
-	background: rgba(0, 0, 255, 0.2);
+/*	background: rgba(0, 0, 255, 0.2);*/
 }
 @media only screen and (max-width: 700px){
 	table tr th{
