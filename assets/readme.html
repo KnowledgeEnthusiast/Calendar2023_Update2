@@ -1,119 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Calendar-2023 Documentation</title>
-	<style type="text/css">
-		*{
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-		html,body{
-			width: 100%;
-			height: 100%;
-			background: #444;
-		}
-		header{
-/*			border: 1px solid red;*/
-			background-color: teal;
-			width: 100%;
-			height: auto;
-			text-align: center;
-			padding: 5px;
-		}
-		header h1{
-/*			border: 1px solid blue;*/
-			font-family: arial, sans-serif;
-			font-size: 40px;
-			color: #fff;
-		}
-		header h3{
-/*			border: 1px solid blue;*/
-			font-family: arial, sans-serif;
-			font-size: 18px;
-			color: #eee;
-			padding: 4px;
-			font-weight: normal;
-		}
-		footer{
-/*			border: 1px solid #fff;*/
-			width: 100%;
-			height: 30px;
-			padding: 20px;
-			text-align: center;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		footer small{
-/*			border: 1px solid #fff;*/
-			padding: 10px;
-			color: #aaa;
-			font-family: arial, sans-serif;
-			font-size: 12px;
-		}
-		.wrapper{
-/*			border: 1px solid #fff;*/
-			width: 60%;
-			height: 100%;
-			margin: auto;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			overflow: auto;
-		}
-		.wrapper .img{
-			border: 1px solid #fff;
-			width: 80%;
-			height: 450px;
-			padding: 4px;
-			background: url("calendar-2023-img.png");
-			background-size: 100% 100%;
-			background-position: center;
-			background-repeat: no-repeat;
-			margin: 1rem;
-		}
-		.wrapper h1{
-			border-bottom: 0.5px solid blue;
-			padding: 5px;
-			color: #aaa;
-			font-family: arial, sans-serif;
-			font-size: 30px;
-		}
-		.wrapper h4{
-			padding: 10px;
-			color: #aaa;
-			font-family: arial, sans-serif;
-			font-size: 20px;
-			font-weight: ;
-		}
-		.wrapper p{
-			padding: 10px;
-			color: #aaa;
-			font-family: arial, sans-serif;
-			font-size: 16px;
-			font-weight: normal;
-		}
-	</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocket-Calendar 2023 (v1.1) Documentation</title>
+<style type="text/css">
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #444;
+}
+header{
+/*	border: 1px solid red;*/
+	background-color: #333;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 5px;
+}
+header h1{
+/*	border: 1px solid blue;*/
+	font-family: arial, sans-serif;
+	font-size: 30px;
+	color: #eee;
+	font-weight: normal;
+}
+header h3{
+/*	border: 1px solid blue;*/
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	color: #eee;
+	padding: 4px;
+	font-weight: normal;
+}
+footer{
+/*	border: 1px solid #fff;*/
+	width: 100%;
+	height: 30px;
+	padding: 20px 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+footer small{
+/*	border: 1px solid #fff;*/
+/*	padding: 10px;*/
+	color: #aaa;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+}
+.wrapper{
+/*	border: 1px solid #fff;*/
+/*	width: 60%;*/
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: auto;
+}
+.container-1, .container-2{
+/*	border: 1px solid red;*/
+	flex-basis: 49%;
+	height: 100%;
+	padding: 10px;
+}
+.container-1 h1, .container-2 h1{
+/*	border-bottom: 0.5px solid blue;*/
+/*	border: 1px solid yellow;*/
+	padding: 10px 0;
+	color: #eee;
+	font-family: arial, sans-serif;
+	font-size: 30px;
+	margin: 10px 0;
+}
+.container-1 h4, .container-2 h4{
+/*	border: 1px solid blue;*/
+	color: #eee;
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	margin: 10px 0;
+}
+.wrapper p{
+	color: #eee;
+	font-family: calibri, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0.9px;
+}
+.wrapper .container-1 img{
+	border: 4px solid #eee;
+	border-radius: 10px;
+	width: 100%;
+	margin: auto;
+	height: 60%;
+}
+@media only screen and (max-width: 700px){
+	.wrapper{
+/*		border: 1px solid #fff;*/
+		height: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow: auto;
+	}
+	.container-1, .container-2{
+/*		border: 1px solid red;*/
+		flex-basis: 100%;
+		height: 100%;
+	}
+	.container-1 h1, .container-2 h1{
+	/*	border-bottom: 0.5px solid blue;*/
+/*		border: 1px solid yellow;*/
+		font-size: 25px;
+	}
+	.wrapper .container-1 img{
+/*		border: 1px solid #fff;*/
+		width: 100%;
+		margin: auto;
+		height: 50%;
+	}
+}
+@media only screen and (max-width: 400px){
+	.wrapper{
+/*		border: 1px solid #fff;*/
+		height: 100%;
+		margin: auto;
+/*		display: flex;*/
+/*		flex-direction: column;*/
+/*		align-items: center;*/
+/*		overflow: auto;*/
+	}
+	.wrapper .container-1{
+/*		border: 1px solid #fff;*/
+		height: 100%;
+/*		overflow: auto;*/
+	}
+	.container-1 h1, .container-2 h1{
+		border-bottom: 0.5px solid blue;
+/*		border: 1px solid yellow;*/
+		display: inline-block;
+		font-size: 20px;
+	}
+	.wrapper .container-1 img{
+/*		border: 1px solid #fff;*/
+		width: 100%;
+		margin: auto;
+	}
+}
+</style>
 </head>
 <body>
 
 	<header>
-		<h1>Calendar-2023: India</h1>
-		<h3>"Calendar-2023: India" Assignment-Project Documentation.</h3>
+		<h1>Pocket-Calendar 2023 (India) Documentation</h1>
 	</header>
 	
 	<div class="wrapper">
-		<div class="img"></div>
-		<h1>Description: Coding Approach & Features.</h1>
-		<!-- <h4>Document Description: Coding Approach & Features.</h4> -->
-		<p>1) UI/UX Layout: <strong>Simple-Flex Design</strong>.<br>2) Calendar Layout Approach: <strong>Table Design</strong>.</p>
+		<div class="container-1">
+			<img src="../assets/PocketCalendar-2023-img.png">
+			<h1>Pocket Calendar 2023 <small>v1.1</small> : India</h1>
+			<p>Hello There...!!! This is Vishalpuri A Gosawi, I'm currently pursuing "Full-Stack Web-Development Technology", "Pocket Calendar India v1.1" is a little effort by me to test my learning and practices. Feel Free to access this tiny but very useful Web-Application.</p>
+		</div>
 
-		<h4>Calendar Features</h4>
-		<p>1) Calendar Use: <strong> Fully Functional.</strong>.<br>2) Calendar Extras: <strong>Holidays Included</strong>, <strong>Month Selection Facility Available</strong> .</p>
+		<div class="container-2">
+			<h1>Description: Coding Approach & Features.</h1>
+			<!-- <h4>Document Description: Coding Approach & Features.</h4> -->
+			<p>1) UI/UX Layout: <strong>Simple-Flex Design</strong>.<br>2) Calendar Layout Approach: <strong>Table Design</strong>.<br>3) Spacial Integration : <strong>iframe</strong> into calendar-container for fetching html files.</p>
+
+			<br>
+
+			<h4>Calendar Features</h4>
+			<p>1) Calendar Use: <strong> Fully Functional Indian Calendar with festivals.</strong><br><br>2) Calendar Extras: <strong>Holidays Included</strong>, <strong>Month Selection Facility Available</strong>, <strong>Included Spacial Menus to show important dates, days and festivals</strong>.<br><br>3) Calendar Spacials: <strong>Each Marked Date with Blue Circle is an important-date, on the other hand Each Marked Date with a Red Circle is Government Holiday.</strong> </p>
+		</div>
+
 	</div>
 
 	<footer>
