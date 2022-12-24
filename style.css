@@ -25,7 +25,7 @@ header{
 /*	border: 1px solid red;*/
 	width: 100%;
 	height: auto;
-	padding: 10px;
+	padding: 10px 0;
 	background: rgba(0, 0, 0, 0.7);
 	display: flex;
 	flex-direction: row;
@@ -75,6 +75,7 @@ header a:hover{
 	background: rgba(240, 255, 255, 0.9);
 	box-shadow: 0px 0px 10px #000;
 /*	position: relative;*/
+	scale: 95%;
 	overflow: hidden;
 }
 .calendar-tools{
@@ -212,6 +213,7 @@ header a:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .wrapper footer small{
 /*	border: 1px solid #fff;*/
@@ -219,7 +221,7 @@ header a:hover{
 	height: 100%;
 	color: #aaa;
 	text-align: center;
-	padding: 10px;
+	padding: 10px 0;
 	font-family: arial, sans-serif;
 }
 .hide{
@@ -235,7 +237,7 @@ header a:hover{
 		font-size: 50px;
 	}
 	.calendar-container{
-		width: 98%;
+/*		width: 98%;*/
 	}
 }
 
@@ -248,7 +250,8 @@ header a:hover{
 		padding: 10px;
 	}
 	.calendar-container{
-		width: 98%;
+		width: 100%;
+		margin: auto;
 	}
 	.calendar-tools h2{
 		font-size: 22px;
@@ -270,19 +273,12 @@ header a:hover{
 		padding: 5px;
 	}
 	.calendar-container{
-		width: 98%;
+		width: 100%;
+		margin: auto;
+/*		scale: 90%;*/
 	}
 	.calendar-tools h2{
 		font-size: 20px;
 		padding-left: 0;
-	}
-}
-
-@media only screen and (max-width: 300px){
-	.calendar-container{
-/*		scale: 98%;*/
-	}
-	.calendar-container .frame-container{
-/*		scale: 90%;*/
 	}
 }
